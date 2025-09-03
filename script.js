@@ -33,3 +33,4 @@ classes.forEach(className => {
   classSection.appendChild(buttonContainer);
   classesContainer.appendChild(classSection);
 });
+
