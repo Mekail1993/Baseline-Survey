@@ -1,20 +1,16 @@
-// Load navbar dynamically
+// Load navbar
 fetch('navbar.html')
   .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar').innerHTML = data;
-  });
+  .then(data => { document.getElementById('navbar').innerHTML = data; });
 
-// Load header dynamically
+// Load header
 fetch('header.html')
   .then(response => response.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
-  });
+  .then(data => { document.getElementById('header').innerHTML = data; });
 
 // Classes & subjects
-const classes = ["প্রথম শ্রেণি", "দ্বিতীয় শ্রেণি", "তৃতীয় শ্রেণি", "চতুর্থ শ্রেণি", "পঞ্চম শ্রেণি"];
-const subjects = ["বাংলা", "গণিত", "ইংরেজি"];
+const classes = ["প্রথম শ্রেণি","দ্বিতীয় শ্রেণি","তৃতীয় শ্রেণি","চতুর্থ শ্রেণি","পঞ্চম শ্রেণি"];
+const subjects = ["বাংলা","গণিত","ইংরেজি"];
 const container = document.getElementById("classes-container");
 
 classes.forEach(cls => {
@@ -37,3 +33,14 @@ classes.forEach(cls => {
   section.appendChild(buttonsDiv);
   container.appendChild(section);
 });
+
+// Hamburger toggle function
+function toggleMenu() {
+  const navbar = document.getElementById("myNavbar");
+  if (navbar.className === "navbar") {
+    navbar.className += " responsive";
+  } else {
+    navbar.className = "navbar";
+  }
+}
+
