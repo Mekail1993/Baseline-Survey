@@ -7,27 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<header> <h1>বেসলাইন সার্ভে</h1> </header>
-  
-  <!-- Navbar include -->
+
+  <!-- Navbar -->
   <div id="navbar"></div>
 
-  <!-- মূল content -->
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Main content -->
   <div class="container">
     <div id="classes-container"></div>
   </div>
 
   <script src="script.js"></script>
-
-  <script>
-    // Navbar include
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
 </body>
 </html>
-
