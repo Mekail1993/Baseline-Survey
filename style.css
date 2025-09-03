@@ -1,3 +1,10 @@
+header {
+  text-align: center;       /* horizontal center */
+  margin: 20px 0;           /* উপরের ও নিচের spacing */
+  font-size: 28px;          /* বড় ফন্ট */
+  color: #333;
+  font-weight: bold;
+}
 body {
   font-family: "SolaimanLipi", sans-serif;
   margin: 0;
