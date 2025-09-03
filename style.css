@@ -1,15 +1,9 @@
-header {
-  text-align: center;       /* horizontal center */
-  margin: 20px 0;           /* উপরের ও নিচের spacing */
-  font-size: 28px;          /* বড় ফন্ট */
-  color: #333;
-  font-weight: bold;
-}
 body {
   font-family: "SolaimanLipi", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 /* Navbar */
@@ -36,7 +30,6 @@ body {
   background-color: #45a049;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -67,14 +60,22 @@ body {
   display: block;
 }
 
-/* Content container */
-.container {
+/* Header */
+header {
   text-align: center;
-  max-width: 600px;
-  margin: 30px auto;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
 }
 
-/* Class section */
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Class sections */
 .class-section {
   background-color: #fff;
   padding: 15px;
@@ -104,4 +105,3 @@ body {
 .subject-buttons button:hover {
   background-color: #45a049;
 }
-
